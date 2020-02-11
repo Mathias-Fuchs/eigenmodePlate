@@ -119,20 +119,7 @@ function resetScene() {
 
 init();
 animate();
-function respondSlider1(e) {
-	var target = (e.target) ? e.target : e.srcElement;
-	var factor = target.value;
-	nx = factor;
-	resetScene();
-	return;
-};
-function respondSlider2(e) {
-	var target = (e.target) ? e.target : e.srcElement;
-	var factor = target.value;
-	ny = factor;
-	resetScene();
-	return;
-};
+
 function init() {
 
 	scene = new THREE.Scene();
@@ -152,13 +139,7 @@ function init() {
 
 	controls = new THREE.OrbitControls(camera, renderer.domElement);
 	document.body.appendChild(renderer.domElement);
-	//
-	var slider1 = document.getElementById("slider1");
-	slider1.addEventListener("input", respondSlider1);
-
-	var slider2 = document.getElementById("slider2");
-	slider2.addEventListener("input", respondSlider2);
-
+	
 	nx = 2;
 	ny = 2;
 	resetScene();
