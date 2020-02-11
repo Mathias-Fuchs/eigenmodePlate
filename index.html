@@ -1,0 +1,30 @@
+﻿<html lang="en">
+<head>
+	<title>
+		A parametric structural displacement visualizer
+	</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Visualisation of the fundamental mode of a plate">
+	<meta name="keywords"
+		content="statistics, consulting, machine learning, github, creative technology, prototyping, constractor, mathiasfuchs, work, open-source, graph, embedding, linear algebra">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+	<script src="./assets/js/orbitcontrols.js"></script>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<input type="range" min="0" max="5" value="0" step="1" id="slider1" orient="vertical"
+			style="position:absolute;"><br>
+		<input type="range" min="0" max="3" value="0" step="1" id="slider2" orient="vertical"
+			style="position:absolute;"><br>
+	</div>
+	<div class="container">
+		<div class="text-center">
+			<script src="./assets/js/structural.js"></script>
+		</div>
+	</div>
+</body>
+</html>
